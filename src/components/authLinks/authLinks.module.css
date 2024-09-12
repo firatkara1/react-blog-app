@@ -1,0 +1,50 @@
+
+.link{
+    cursor: pointer;
+}
+
+
+
+
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor);
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5px;
+    background: rgb(65, 157, 236);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+@media screen and (max-width:640px) {
+    
+
+    .link{
+        display: none;
+    }
+    .profileText{
+        display: none;
+    }
+
+    .create{
+        background: rgb(65, 157, 236);
+        padding: 3px;
+        border-radius: 5px;
+    }
+}

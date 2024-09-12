@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px ;
+}
+
+
+.responsiveMenu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: var(--bg);
+    height: calc(100vh - 100px) ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 36px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.logoText{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    font-size: 20px;
+}
+
+.burger{
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:1280px) {
+    
+    .logoText{
+        font-size: 32px;
+    }
+
+    .links{
+        font-size: 18px;
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
+    .social{
+        display: none;
+    }
+
+    .logoText{
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    .logoText{
+        font-size: 24px;
+    }
+
+}
+
+
+
+@media screen and (max-width:640px) {
+
+    .burger{
+        display: flex;
+    }
+    
+    .links{
+        justify-content: flex-end;
+    }
+
+    .link{
+        display: none;
+    }
+    .image{
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo{
+        gap: 12px;
+    }
+    
+
+    .logoText{
+        font-size: 18px;
+        
+    }
+
+
+
+}

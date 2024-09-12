@@ -1,0 +1,93 @@
+.container{
+    margin-bottom: 50px;
+    display: flex;
+    /* align-items: flex-start; */
+    gap: 26px;
+}
+
+.imageContainer{
+    width: 240px;
+    height: 163.94px;
+    position: relative;
+}
+
+.image{
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.date{
+    color: gray;
+    margin-right: 12px;
+}
+
+.category{
+    color: crimson;
+    font-weight: 500;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--softTextColor);
+    max-height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Kaç satırın görüneceğini belirtir */
+  -webkit-box-orient: vertical;
+}
+
+.link{
+    border-bottom: 1px solid crimson;
+    width: max-content;
+    padding: 2px 0px;
+}
+
+.customLink {
+    position: relative;
+    text-decoration: none;
+   font-size: 22px;
+    transition: color 0.3s ease; /* Rengin üzerinde animasyon */
+  }
+  
+  .customLink:hover,
+  .customLink:active {
+    color: #3498db; /* Harfin rengini mavi yap */
+  }
+
+/* @media screen and (max-width:1280px) {
+    .imageContainer{
+        
+    }
+} */
+
+
+@media screen and (max-width:1280px) {
+    /* .imageContainer{
+        display: none;
+    } */
+
+    
+}
+
+
+
+
+
+
+
+
+
